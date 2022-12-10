@@ -2,7 +2,7 @@
 
 This portfolio project was designed for Nology students. It aims to tackle the concepts we have been learning in class. This project will require us to use HTML, SCSS with BEM naming convention. It is critical for us to ensure that we use a mobile design first as it is the most popular way to view the web as of 2022.
 
-### MVP
+##MVP
  - You need to have it as a public repository on GitHub
  - In the repo you will also need a README.md with a short intro to the project.
  - You are to use SCSS for styling.
@@ -10,7 +10,7 @@ This portfolio project was designed for Nology students. It aims to tackle the c
  - You must use BEM naming convention for scss selectors.
  - You must have the project hosted using github pages.
 
-####Your Portfolio should have the following section:
+###Your Portfolio should have the following section:
 
  - A landing page/section with your name and title on it.
  - An About page/section with a little bit about you
