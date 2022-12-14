@@ -26,6 +26,7 @@ main {
     display: none;
     padding-top: 2rem;
     width: 100%;
+    top: 0;
   
     &.open {
       display: block;
@@ -51,7 +52,7 @@ main {
     height: 30px;
     display: inline-block;
     cursor: pointer;
-    padding-top: 0;
+    top: 0;
     z-index: 100;
   
     .line {
