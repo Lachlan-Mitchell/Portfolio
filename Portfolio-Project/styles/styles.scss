@@ -1,0 +1,121 @@
+// Color Pallete
+$primary_color: #72EAEA;
+$secondary_color: #2692F4;
+$tertiary_color: #00FFAE;
+$border: $tertiary_color solid;
+
+// Hmaburger nav for phone needs to be position fixed.
+main {
+  background-color: $primary_color;
+}
+
+.menu {
+  display: none;
+
+  &.open {
+    display: block;
+  }
+
+  .menu-item {
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lighten(#333, 10%);
+    }
+  }
+  a{
+    text-decoration: none;
+  }
+}
+
+.hamburger-menu {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  cursor: pointer;
+
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+  }
+}
+
+// copy pasta nav for desktop, position absoloute
+
+// splash landing page with button that animates to start the scroll
+
+// image next to projects
+
+// refactor to use mixins for img and figcaption
+
+//on phone layout
+@media screen and (max-width: 550px) and (min-width: 250px) {
+  .container-tech{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+    border: 0.25rem $secondary_color solid;
+    figure {
+      background-color: $secondary_color;
+      border: .25rem $border;
+      text-align: center;
+      padding: 0.5rem
+    }
+    
+    img {
+      border: .125rem $border;
+      max-width: 100%;
+    }
+    
+    figcaption {
+      border: .25rem $border;
+      max-width: 100%;
+    }
+  }
+
+}
+
+
+
+.big {
+  background-color: #72EAEA;
+  width: 500px;
+}
+.medium {
+  background-color: #2692F4;
+  width:80%;
+}
+.small {
+  background-color: #00FFAE;
+  width:80%;
+}
+
+
+// on desktop (5 columns by 2 rows)
+@media screen  and (min-width: 600px){
+  .container-tech{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border: 0.5rem $secondary_color solid;
+    figure {
+      background-color: $secondary_color;
+      border: .5rem $border;
+      text-align: center;
+      padding: 1rem
+    }
+    
+    img {
+      border: .25rem $border;
+      max-width: 100%;
+    }
+    
+    figcaption {
+      border: .25rem $border;
+      max-width: 100%;
+    }
+  }
+}

@@ -5,8 +5,221 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lachlan's Portfolio</title>
-    <link rel="stlyesheet" href="styles/styles.css" />
-    <link rel="stlyesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="big">
+      <h1>Im the big box</h1>
+      <div class="medium">
+        <h2>Im the medium box</h2>
+        <div class="small">
+          <h3>im the small box</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="hamburger-menu" onclick="menuFunction()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav class="menu">
+      <div class="menu-item"><a href="#about">About</a></div>
+      <div class="menu-item"><a href="#projects">Projects</a></div>
+      <div class="menu-item"><a href="#tech-stack">Tech Stack</a></div>
+      <div class="menu-item"><a href="#contact">Contact</a></div>
+    </nav>
+
+    <section id="landing"></section>
+    <!--big splash landing page with gripping effect addded later, cards flying down or something like poker-->
+    <header class="main-header">
+      <h1>Lachlan Mitchell</h1>
+      <h2>Software developer</h2>
+    </header>
+    <!--Button to scroll to effect down to about section-->
+    <button>Icon of something to scroll</button>
+    <!--Effect to show where the nav bar is, hihlight button for a second maybe a flash ping effect-->
+    <main>
+      <section id="about"></section>
+
+      <picture class="contianer-img">
+        <figure>
+          <img src="" />
+          <figcaption></figcaption>
+        </figure>
+      </picture>
+      <header class="about-header">
+        <h3>Lachaln Mitchell</h3>
+      </header>
+      <p>Here lies information about me that you totally want to know</p>
+      <section id="projects"></section>
+      <div class="container-project">
+        <header>
+          <h4>eShop</h4>
+          <p>
+            Im excited to do this project because it tackles skills like xyz
+            with abc text stack
+          </p>
+        </header>
+      </div>
+      <div class="container-project">
+        <header>
+          <h4>fakeOS</h4>
+          <p>
+            Im excited to do this project because it tackles skills like xyz
+            with abc text stack
+          </p>
+        </header>
+      </div>
+      <div class="container-project">
+        <header>
+          <h4>google-books</h4>
+          <p>
+            Im excited to do this project because it tackles skills like xyz
+            with abc text stack
+          </p>
+        </header>
+      </div>
+      <div class="container-project">
+        <header>
+          <h4>Morse code translator</h4>
+          <p>
+            Im excited to do this project because it tackles skills like xyz
+            with abc text stack
+          </p>
+        </header>
+      </div>
+      <section id="tech-stack"></section>
+
+      <div class="container-tech">
+        <div class="tech" id="html">
+          <picture>
+            <figure>
+              <img
+                src="/Portfolio-Project\resources\icons8-html-5-100.png"
+                alt="HTML 5"
+              />
+              <figcaption>HTML5</figcaption>
+            </figure>
+          </picture>
+        </div>
+        <div class="tech" id="GitHub">
+          <picture>
+            <figure>
+              <img
+                src="/Portfolio-Project\resources\icons8-github-100.png"
+                alt="GitHub"
+              />
+              <figcaption>GitHub</figcaption>
+            </figure>
+          </picture>
+        </div>
+        <div class="tech" id="css">
+          <picture>
+            <figure>
+              <img
+                src="/Portfolio-Project\resources\icons8-css3-100.png"
+                alt="CSS"
+              />
+              <figcaption>CSS</figcaption>
+            </figure>
+          </picture>
+        </div>
+        <div class="tech" id="scss">
+          <picture>
+            <figure>
+              <img
+                src="/Portfolio-Project\resources\icons8-sass-100.png"
+                alt="SCSS"
+              />
+              <figcaption>SCSS</figcaption>
+            </figure>
+          </picture>
+        </div>
+        <div class="tech" id="js">
+          <picture>
+            <figure>
+              <img
+                src="/Portfolio-Project\resources\icons8-javascript-100.png"
+                alt="JavaScript"
+              />
+              <figcaption>JavaScript</figcaption>
+            </figure>
+          </picture>
+        </div>
+        <div class="tech" id="react">
+          <picture>
+            <figure>
+              <img
+                src="/Portfolio-Project\resources\icons8-react-100.png"
+                alt="React"
+              />
+              <figcaption>React</figcaption>
+            </figure>
+          </picture>
+        </div>
+        <div class="tech" id="java">
+          <picture>
+            <figure>
+              <img
+                src="/Portfolio-Project\resources\icons8-java-100.png"
+                alt="Java"
+              />
+              <figcaption>Java</figcaption>
+            </figure>
+          </picture>
+        </div>
+        <div class="tech" id="spring">
+          <picture>
+            <figure>
+              <img
+                src="/Portfolio-Project\resources\icons8-spring-logo-100.png"
+                alt="Spring"
+              />
+              <figcaption>Spring</figcaption>
+            </figure>
+          </picture>
+        </div>
+        <div class="tech" id="command-line">
+          <picture>
+            <figure>
+              <img
+                src="/Portfolio-Project\resources\icons8-command-line-100.png"
+                alt="Command-line"
+              />
+              <figcaption>Command Line</figcaption>
+            </figure>
+          </picture>
+        </div>
+        <div class="tech" id="sql">
+          <picture>
+            <figure>
+              <img
+                src="/Portfolio-Project\resources\icons8-sql-100.png"
+                alt="SQL"
+              />
+              <figcaption>SQL</figcaption>
+            </figure>
+          </picture>
+        </div>
+      </div>
+    </main>
+    <section id="contact"></section>
+    <form>
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="first-name" />
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" name="last-name" />
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" />
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" />
+    </form>
+    <script>
+      function menuFunction() {
+        let menu = document.querySelector(".menu");
+        menu.classList.toggle("open");
+      }
+    </script>
+  </body>
 </html>
