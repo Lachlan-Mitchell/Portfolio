@@ -8,16 +8,6 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <div class="big">
-      <h1>Im the big box</h1>
-      <div class="medium">
-        <h2>Im the medium box</h2>
-        <div class="small">
-          <h3>im the small box</h3>
-        </div>
-      </div>
-    </div>
-
     <div class="hamburger-menu" onclick="menuFunction()">
       <div class="line"></div>
       <div class="line"></div>
@@ -30,14 +20,34 @@
       <div class="menu-item"><a href="#contact">Contact</a></div>
     </nav>
 
-    <section id="landing"></section>
+    <nav class="desktop">
+      <ul>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#tech-stack">Tech Stack</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="landing">
+      <header class="main-header">
+        <h1>Lachlan Mitchell</h1>
+        <h2>Software developer</h2>
+      </header>
+      <button>Icon of something to scroll</button>
+    </section>
     <!--big splash landing page with gripping effect addded later, cards flying down or something like poker-->
-    <header class="main-header">
-      <h1>Lachlan Mitchell</h1>
-      <h2>Software developer</h2>
-    </header>
+
     <!--Button to scroll to effect down to about section-->
-    <button>Icon of something to scroll</button>
+
     <!--Effect to show where the nav bar is, hihlight button for a second maybe a flash ping effect-->
     <main>
       <section id="about"></section>

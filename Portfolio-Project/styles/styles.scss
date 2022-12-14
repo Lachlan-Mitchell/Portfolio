@@ -4,48 +4,120 @@ $secondary_color: #2692F4;
 $tertiary_color: #00FFAE;
 $border: $tertiary_color solid;
 
+$zero: 0;
+$nav_font: 28px;
+
+@mixin full-width {
+  width: 100%;
+}
+
+
 // Hmaburger nav for phone needs to be position fixed.
 main {
   background-color: $primary_color;
 }
 
-.menu {
-  display: none;
-
-  &.open {
-    display: block;
+@media screen and(max-width:550px) and (min-width:250px){
+  .desktop {
+    display: none;
   }
-
-  .menu-item {
-    padding: 10px;
-    cursor: pointer;
-
-    &:hover {
-      background-color: lighten(#333, 10%);
+  .menu {
+    position: fixed;
+    display: none;
+    padding-top: 2rem;
+    width: 100%;
+    top: 0;
+  
+    &.open {
+      display: block;
+      background-color: #00FFAE;
+    }
+  
+    .menu-item {
+      padding: 10px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: lighten(#333, 10%);
+      }
+    }
+    a{
+      text-decoration: none;
     }
   }
-  a{
-    text-decoration: none;
+  
+  .hamburger-menu {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    cursor: pointer;
+    top: 0;
+    z-index: 100;
+  
+    .line {
+      z-index: 100;
+      width: 100%;
+      height: 3px;
+      background-color: #333;
+      margin: 5px 0;
+      padding-top: 0;
+    }
   }
-}
-
-.hamburger-menu {
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  cursor: pointer;
-
-  .line {
-    width: 100%;
-    height: 3px;
-    background-color: #333;
-    margin: 5px 0;
-  }
-}
+} 
 
 // copy pasta nav for desktop, position absoloute
+@media screen and (min-width: 550px) {
+  .menu {
+    display: none;
+  }
+  #landing {
+    margin-top: 8rem;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: $nav_font;
+    margin-bottom: $zero;
+    background-color: rgb(195, 197, 198);
+    ul{
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+    }
+    ul > li {
+      position: relative;
+      padding:  $zero;
+    }
+    ul > li > a {
+      color: #222;
+      text-decoration: none
+    
+    }
+    ul > li > a:before {
+      content: '';
+      display: block;
+      height: 5px;
+      width: 0%;
+      background-color: #444;
+      padding-top:4px;
+      position: absolute;
+      top: 30px;
+    
+      transition: all ease-in-out 250ms;
+    }
+    ul > li > a:hover::before {
+      @include full-width;
+    }
+  }
+}
 
 // splash landing page with button that animates to start the scroll
+
+#landing {
+  text-align: center;
+}
 
 // image next to projects
 
@@ -80,18 +152,7 @@ main {
 
 
 
-.big {
-  background-color: #72EAEA;
-  width: 500px;
-}
-.medium {
-  background-color: #2692F4;
-  width:80%;
-}
-.small {
-  background-color: #00FFAE;
-  width:80%;
-}
+
 
 
 // on desktop (5 columns by 2 rows)
