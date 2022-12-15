@@ -11,136 +11,19 @@ $nav_font: 28px;
   width: 100%;
 }
 
+* {
+  box-sizing: border-box;
+  
+}
+
 h1 ,h2 {
   font-size: clamp(50px, 8vw, 60px);
   text-align: center;
 }
 
-@media only screen and (max-width: 800px) {
- h1, h2 {
-    font-size: clamp(40px, 10vw, 60px);
-  }
-}
-
-@media only screen and (max-width: 400px) {
-
-    h1, h2 {
-      font-size: clamp(30px, 12vw, 60px);
-    }
-    
-    .links {
-      padding-top: 30px;
-    }
-    
-    img {
-      width: 38px;
-      height: 38px;
-    }
-  }
-
-
-// Hmaburger nav for phone needs to be position fixed.
 main {
   background-color: $primary_color;
 }
-
-@media screen and(max-width:550px) and (min-width:250px){
-  .desktop {
-    display: none;
-  }
-  .menu {
-    position: fixed;
-    display: none;
-    padding-top: 2rem;
-    width: 100%;
-    top: 0;
-  
-    &.open {
-      display: block;
-      background-color: #00FFAE;
-    }
-  
-    .menu-item {
-      padding: 10px;
-      cursor: pointer;
-  
-      &:hover {
-        background-color: lighten(#333, 10%);
-      }
-    }
-    a{
-      text-decoration: none;
-    }
-  }
-  
-  .hamburger-menu {
-    position: fixed;
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    cursor: pointer;
-    top: 0;
-    z-index: 100;
-  
-    .line {
-      z-index: 100;
-      width: 100%;
-      height: 3px;
-      background-color: #333;
-      margin: 5px 0;
-      padding-top: 0;
-    }
-  }
-} 
-
-// copy pasta nav for desktop, position absoloute
-@media screen and (min-width: 550px) {
-  .menu {
-    display: none;
-  }
-  #landing {
-    margin-top: 8rem;
-  }
-  nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    font-size: $nav_font;
-    margin-bottom: $zero;
-    background-color: rgb(195, 197, 198);
-    ul{
-      list-style: none;
-      display: flex;
-      justify-content: space-around;
-    }
-    ul > li {
-      position: relative;
-      padding:  $zero;
-    }
-    ul > li > a {
-      color: #222;
-      text-decoration: none
-    
-    }
-    ul > li > a:before {
-      content: '';
-      display: block;
-      height: 5px;
-      width: 0%;
-      background-color: #444;
-      padding-top:4px;
-      position: absolute;
-      top: 30px;
-    
-      transition: all ease-in-out 250ms;
-    }
-    ul > li > a:hover::before {
-      @include full-width;
-    }
-  }
-}
-
-// splash landing page with button that animates to start the scroll
 
 #landing {
   text-align: center;
@@ -151,65 +34,14 @@ main {
 
 // refactor to use mixins for img and figcaption
 
-//on phone layout
-@media screen and (max-width: 550px) and (min-width: 250px) {
-  .container-tech{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
-    figure {
-      background-color: $secondary_color;
-      border: .25rem $border;
-      text-align: center;
-      padding: 0.5rem
-    }
-    
-    img {
-      max-width: 100%;
-    }
-    
-    figcaption {
-      max-width: 100%;
-    }
+.container-tech {
+  img {
+    max-width: 100%;
   }
-
-}
-
-
-
-
-
-
-// on desktop (5 columns by 2 rows)
-@media screen  and (min-width: 600px){
-  .container-tech{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    figure {
-      background-color: $secondary_color;
-      border: .5rem $border;
-      text-align: center;
-      padding: 1rem
-    }
-    
-    img {
-      max-width: 100%;
-    }
-    
-    figcaption {
-
-      max-width: 100%;
-    }
-  }
-}
-
-
-// contact form
-
-* {
-  box-sizing: border-box;
   
+  figcaption {
+    max-width: 100%;
+  }
 }
 
 #contact {
@@ -254,28 +86,6 @@ main {
 .contact-form-wrapper {
   background-color: #ffffff8f;
   border-radius: 0 10px 10px 0;
-}
-
-@media only screen and (max-width: 800px) {
-  .contact-links, .contact-form-wrapper {
-    width: 100%;
-  }
-  
-  .contact-links {
-    border-radius: 10px 10px 0 0;
-  }
-  
-  .contact-form-wrapper {
-    border-radius: 0 0 10px 10px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-
-  .contact-box {
-    width: 95%;
-    margin: 8% 5%;
-  }
 }
 
 #contact-message {
@@ -385,4 +195,203 @@ textarea:valid+label {
   transform: scale(1.1, 1.1);
   filter: sepia(0.5);
 }
+
+@media only screen and (max-width: 800px) {
+ h1, h2 {
+    font-size: clamp(40px, 10vw, 60px);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+    h1, h2 {
+      font-size: clamp(30px, 12vw, 60px);
+    }
+    
+    .links {
+      padding-top: 30px;
+    }
+    
+    img {
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+
+// Hmaburger nav for phone needs to be position fixed.
+
+
+@media screen and(max-width:550px) and (min-width:250px){
+  .desktop {
+    display: none;
+  }
+  .menu {
+    position: fixed;
+    display: none;
+    padding-top: 2rem;
+    width: 100%;
+    top: 0;
+  
+    &.open {
+      display: block;
+      background-color: $secondary_color;
+    }
+  
+    .menu-item {
+      padding: 10px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: lighten($tertiary_color, 10%);
+      }
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+  
+  .hamburger-menu {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    cursor: pointer;
+    top: 0;
+    z-index: 100;
+  
+    .line {
+      z-index: 100;
+      width: 100%;
+      height: 3px;
+      background-color: $tertiary_color;
+      margin: 5px 0;
+      padding-top: 0;
+    }
+  }
+} 
+
+// copy pasta nav for desktop, position absoloute
+@media screen and (min-width: 550px) {
+  .menu {
+    display: none;
+  }
+  #landing {
+    margin-top: 8rem;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-size: $nav_font;
+    margin-bottom: $zero;
+    background-color:$tertiary_color;
+    ul{
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+    }
+    ul > li {
+      position: relative;
+      padding:  $zero;
+    }
+    ul > li > a {
+      color: $secondary_color;
+      text-decoration: none
+    
+    }
+    ul > li > a:before {
+      content: '';
+      display: block;
+      height: 5px;
+      width: 0%;
+      background-color: $primary_color;
+      padding-top:4px;
+      position: absolute;
+      top: 30px;
+    
+      transition: all ease-in-out 250ms;
+    }
+    ul > li > a:hover::before {
+      @include full-width;
+    }
+  }
+}
+
+
+
+//on phone layout
+@media screen and (max-width: 800px) and (min-width: 250px) {
+  .container-tech{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+    figure {
+      background-color: $secondary_color;
+      border: .25rem $border;
+      text-align: center;
+      padding: 0.5rem
+    }
+  
+  }
+
+}
+
+@media screen  and (min-width: 801px) and (max-width: 1159px){
+  .container-tech{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+    figure {
+      background-color: $secondary_color;
+      border: .5rem $border;
+      text-align: center;
+      padding: 1rem
+    }
+  }
+}
+
+// on desktop (5 columns by 2 rows)
+@media screen  and (min-width: 1160px){
+  .container-tech{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    figure {
+      background-color: $secondary_color;
+      border: .5rem $border;
+      text-align: center;
+      padding: 1rem
+    }
+  }
+}
+
+
+// contact form
+
+
+
+@media only screen and (max-width: 800px) {
+  .contact-links, .contact-form-wrapper {
+    width: 100%;
+  }
+  
+  .contact-links {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .contact-form-wrapper {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .contact-box {
+    width: 95%;
+    margin: 8% 5%;
+  }
+}
+
+
 
