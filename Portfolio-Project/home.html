@@ -61,7 +61,7 @@
       <header class="about-header">
         <h3>Lachaln Mitchell</h3>
       </header>
-      <p>Here lies information about me that you totally want to know</p>
+      <p>Hi my name is <mark>Lachlan Mitchell</mark> I have been working with Nology to become the best software dev i can be. I first got a look into programming when my friend showed me a sushi go bot that he was building for a computer science class. This introduction got me started on codecademy where i learnt fundimentals in C++, HTML, CSS JS, SQL then knew that i wanted to get into the tech-world and have now started working with Nology to imporve my dev skills. My previous work as a Bouldering setter and coach has always been about problem solving and teamwork.</p>
       <section id="projects"></section>
       <div class="container-project">
         <header>
@@ -99,8 +99,8 @@
           </p>
         </header>
       </div>
-      <section id="tech-stack"></section>
-
+      <section id="tech-stack">
+        <h2>Tech-Stack</h2>
       <div class="container-tech">
         <div class="tech" id="html">
           <picture>
@@ -213,18 +213,40 @@
           </picture>
         </div>
       </div>
+    </section>
     </main>
-    <section id="contact"></section>
-    <form>
-      <label for="first-name">First Name</label>
-      <input type="text" id="first-name" name="first-name" />
-      <label for="last-name">Last Name</label>
-      <input type="text" id="last-name" name="last-name" />
-      <label for="email">Email</label>
-      <input type="text" id="email" name="email" />
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" />
-    </form>
+    <section id="contact">
+      <div class="contact-box">
+        <div class="contact-links">
+          <h2 id="contact-message">GET IN TOUCH</h2>
+          <div class="links">
+            <div class="link">
+              <a><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+            </div>
+            <div class="link">
+              <a><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form>
+            <div class="form-item">
+              <input type="text" name="sender" required>
+              <label>Name:</label>
+            </div>
+            <div class="form-item">
+              <input type="text" name="email" required>
+              <label>Email:</label>
+            </div>
+            <div class="form-item">
+              <textarea class="" name="message" required></textarea>
+              <label>Message:</label>
+            </div>
+            <button class="submit-btn">Send</button>  
+          </form>
+        </div>
+      </div>
+    </section>
     <script>
       function menuFunction() {
         let menu = document.querySelector(".menu");
