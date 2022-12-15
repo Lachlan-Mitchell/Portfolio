@@ -1,3 +1,9 @@
+## Link
+This is my link to my github pages https://lachlan-mitchell.github.io/Portfolio/
+
+##Repo
+This is the link to my repo https://github.com/Lachlan-Mitchell/Portfolio
+
 # Portfolio
 
 This portfolio project was designed for Nology students. It aims to tackle the concepts we have been learning in class.
