@@ -1,7 +1,7 @@
 ## Link
 This is my link to my github pages https://lachlan-mitchell.github.io/Portfolio/
 
-##Repo
+## Repo
 This is the link to my repo https://github.com/Lachlan-Mitchell/Portfolio
 
 # Portfolio
