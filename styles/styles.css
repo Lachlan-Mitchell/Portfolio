@@ -33,6 +33,12 @@ main {
   cursor: pointer;
 }
 
+#live {
+  background-color: white;
+  padding: 3px;
+  border-radius: 10%;
+}
+
 .main__header {
   padding-top: 30vh;
 }
