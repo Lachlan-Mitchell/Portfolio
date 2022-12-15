@@ -1,3 +1,5 @@
+permalink: /home.html
+
 # Portfolio
 
 This portfolio project was designed for Nology students. It aims to tackle the concepts we have been learning in class. This project will require us to use HTML, SCSS with BEM naming convention. It is critical for us to ensure that we use a mobile design first as it is the most popular way to view the web as of 2022.
