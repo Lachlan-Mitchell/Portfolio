@@ -23,4 +23,9 @@ As well the website needed to contain:
 
 Designing the webpage took many hours. After hours of browsing professional software developer portfolios. I decided to go with a simple approach whilst i only have a few avaliable tools  under my belt. HTML, SCSS, and the smallest JS I can use. Struggling with design ideas I tried to tackle the MVP's one step at a time. Finding major roadblocks with the media querys and BEM naming system that i was very unfamilar with. To overcome these challenges I researched breakpoints as much as i could and lived in dev tools looking at all the differnt layouts
  
- ### Additional resources I used.
+## Tech Stack
+
+- HTML
+- CSS/SCSS
+- JS
+
