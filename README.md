@@ -3,19 +3,24 @@
 This portfolio project was designed for Nology students. It aims to tackle the concepts we have been learning in class. This project will require us to use HTML, SCSS with BEM naming convention. It is critical for us to ensure that we use a mobile design first as it is the most popular way to view the web as of 2022.
 
 ## MVP
- - You need to have it as a public repository on GitHub
- - In the repo you will also need a README.md with a short intro to the project.
- - You are to use SCSS for styling.
- - !!! Responsiveness is vital – use Grid, Flex, whatever you wish but the site must look good on mobile phones. VERY CRITICAL! : You will need to make sure that your website looks good on phones, tablets and laptops (use media queries for at least checking whether the device is a mobile phone)
- - You must use BEM naming convention for scss selectors.
- - You must have the project hosted using github pages.
+ - The main requirements for this project were:
 
-#### Your Portfolio should have the following section:
+- The project needed to be stored/shared as a public repository on Github.
+- The website needed to be styled using SCSS.
+- The website needed to look good on all devices and therefore needed to be responsive.
+- BEM naming convention should be used for scss selectors.
+- The project also needed to be hosted live on Github pages.
 
- - A landing page/section with your name and title on it.
- - An About page/section with a little bit about you
- - A Tech stacks/skills page/section with all the techs you have learned during the course
- - A Project page/section with all your projects (use placeholder images and text at the beginning to render your website as it would with actual projects) - each project should have a little description, a link to a live version and a link to the matching GitHub Repo (using a README.md at the root of the repo to include how you went about coding for that project)
- - A Contact page/section with your email, GitHub profile link, LinkedIn profile link.
+As well the website needed to contain:
+
+- A Landing page or section.
+- An About page or section with a little bit about myself.
+- A Projects page or section future projects that I am working on.
+- A Skills page or section (to showcase the programming languages that I will be skilled in after the completion of the course.
+-Links to my projects on Github
+
+### Summary
+
+Designing the webpage took many hours. After hours of browsing professional software developer portfolios. I decided to go with a simple approach whilst i only have a few avaliable tools  under my belt. HTML, SCSS, and the smallest JS I can use. Struggling with design ideas I tried to tackle the MVP's one step at a time. Finding major roadblocks with the media querys and BEM naming system that i was very unfamilar with. To overcome these challenges I researched breakpoints as much as i could and lived in dev tools looking at all the differnt layouts
  
  ### Additional resources I used.

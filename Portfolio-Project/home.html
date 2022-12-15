@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <div class="hamburger-menu" onclick="menuFunction()">
+    <div class="hamburger__menu" onclick="menuFunction()">
       <div class="line"></div>
       <div class="line"></div>
       <div class="line"></div>
     </div>
     <nav class="menu">
-      <div class="menu-item"><a href="#about">About</a></div>
-      <div class="menu-item"><a href="#projects">Projects</a></div>
-      <div class="menu-item"><a href="#tech-stack">Tech Stack</a></div>
-      <div class="menu-item"><a href="#contact">Contact</a></div>
+      <div class="menu__item"><a href="#about" onclick="menuFunction()">About</a></div>
+      <div class="menu__item"><a href="#projects" onclick="menuFunction()">Projects</a></div>
+      <div class="menu__item"><a href="#tech-stack" onclick="menuFunction()">Tech Stack</a></div>
+      <div class="menu__item"><a href="#contact" onclick="menuFunction()">Contact</a></div>
     </nav>
 
     <nav class="desktop">
@@ -38,7 +38,7 @@
     </nav>
 
     <section id="landing">
-      <header class="main-header">
+      <header class="main__header">
         <h1>Lachlan Mitchell</h1>
         <h2>Software Developer</h2>
         <button class="btn">
@@ -47,66 +47,101 @@
       </header>
       
     </section>
-    <!--big splash landing page with gripping effect addded later, cards flying down or something like poker-->
-
-    <!--Button to scroll to effect down to about section-->
-
-    <!--Effect to show where the nav bar is, hihlight button for a second maybe a flash ping effect-->
     <main>
       <section id="about">
       <div>  
-      <picture class="container-img">
+      <picture class="container__img">
           <img src="/Portfolio-Project\resources\lachlan.jpg" alt="self-portrait" />
       </picture>
     </div>
     <div>
-      <header class="about-header">
+      <header class="about__header">
         <h3>Lachaln Mitchell</h3>
       </header>
-      <p>Hi my name is <mark>Lachlan Mitchell</mark> I have been working with Nology to become the best software dev i can be. I first got a look into programming when my friend showed me a sushi go bot that he was building for a computer science class. This introduction got me started on codecademy where i learnt fundimentals in C++, HTML, CSS JS, SQL then knew that i wanted to get into the tech-world and have now started working with Nology to imporve my dev skills. My previous work as a Bouldering setter and coach has always been about problem solving and teamwork.</p>
+      <p>Hi my name is Lachlan Mitchell I have been working with Nology to become the best software dev i can be. I first got a look into programming when my friend showed me a sushi go bot that he was building for a computer science class. This introduction got me started on codecademy where i learnt fundimentals in C++, HTML, CSS JS, SQL then knew that i wanted to get into the tech-world and have now started working with Nology to imporve my dev skills. My previous work as a Bouldering setter and coach has always been about problem solving and teamwork.</p>
     </div>
       </section>
-
-      <section id="projects"></section>
-      <div class="container-project">
-        <header>
-          <h4>eShop</h4>
-          <p>
-            Im excited to do this project because it tackles skills like xyz
-            with abc text stack
-          </p>
-        </header>
-      </div>
-      <div class="container-project">
-        <header>
-          <h4>fakeOS</h4>
-          <p>
-            Im excited to do this project because it tackles skills like xyz
-            with abc text stack
-          </p>
-        </header>
-      </div>
-      <div class="container-project">
-        <header>
-          <h4>google-books</h4>
-          <p>
-            Im excited to do this project because it tackles skills like xyz
-            with abc text stack
-          </p>
-        </header>
-      </div>
-      <div class="container-project">
-        <header>
-          <h4>Morse code translator</h4>
-          <p>
-            Im excited to do this project because it tackles skills like xyz
-            with abc text stack
-          </p>
-        </header>
-      </div>
+      <section id="projects">
+        <div class="container__project">
+        <div>
+          <header>
+            <h4>eShop</h4>
+            <p>
+              This is an exciting project which I am looking forward to working on in the future of the _nology program. This project should utilise my current skills and knowledge across HTML5, CSS3 and JS.
+              <br />
+              <a href="https://www.linkedin.com/in/lachlan-mitchell-24993225a/"><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" target="_blank" alt="linkedin"></a>
+              <br />
+              <a href="https://github.com/Lachlan-Mitchell" target="_blank"><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+            </p>
+          </header>
+        </div>
+        <div> 
+          <picture class="container__img">
+            <img src="/Portfolio-Project\resources\Eshop.jpg" alt="eShop" />
+          </picture>
+        </div>
+        </div>
+        <div class="container__project">
+          <div>
+          <header>
+            <h4>fakeOS</h4>
+            <p>
+              This is an exciting project which I am looking forward to working on in the future of the _nology program. This project should utilise my current skills and knowledge across HTML5, CSS3 and JS.
+              <br />
+              <a href="https://www.linkedin.com/in/lachlan-mitchell-24993225a/"><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" target="_blank" alt="linkedin"></a>
+              <br />
+              <a href="https://github.com/Lachlan-Mitchell" target="_blank"><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+            </p>
+          </header>
+          </div>
+          <div>  
+              <picture class="container__img">
+                  <img src="/Portfolio-Project\resources\fakeOS.png" alt="fakeOS" />
+              </picture>
+            </div>
+        </div>
+        <div class="container__project">
+          <div>
+          <header>
+            <h4>google-books</h4>
+            <p>
+              This is an exciting project which I am looking forward to working on in the future of the _nology program. This project should utilise my current skills and knowledge across HTML5, CSS3 and JS.
+              <br />
+              <a href="https://www.linkedin.com/in/lachlan-mitchell-24993225a/"><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" target="_blank" alt="linkedin"></a>
+              <br />
+              <a href="https://github.com/Lachlan-Mitchell" target="_blank"><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+            </p>
+          </header>
+        </div>
+          <div>  
+            <picture class="container__img">
+                <img src="/Portfolio-Project\resources\Google-Books.png" alt="Google-Books" />
+            </picture>
+          </div>
+        </div>
+        <div class="container__project">
+          <div>
+          <header>
+            <h4>Morse Code Translator</h4>
+            <p>
+              This is an exciting project which I am looking forward to working on in the future of the _nology program. This project should utilise my current skills and knowledge across HTML5, CSS3 and JS.
+              <br />
+              <a href="https://www.linkedin.com/in/lachlan-mitchell-24993225a/"><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" target="_blank" alt="linkedin"></a>
+              <br />
+              <a href="https://github.com/Lachlan-Mitchell" target="_blank"><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+            </p>
+          </div>
+          <div>  
+                <picture class="container__img">
+                    <img src="/Portfolio-Project\resources\morse-code-translator.jpg" alt="morse-code-translator" />
+                </picture>
+              </div>
+        </div>
+      </section>
+      
       <section id="tech-stack">
         <h2>Tech-Stack</h2>
-      <div class="container-tech">
+      <div class="container__tech">
         <div class="tech" id="html">
           <picture>
             <figure>
@@ -221,10 +256,13 @@
     </section>
     </main>
     <section id="contact">
-      <div class="contact-box">
-        <div class="contact-links">
-          <h2 id="contact-message">GET IN TOUCH</h2>
+      <div class="contact__box">
+        <div class="contact__links">
+          <h2 id="contact__message">GET IN TOUCH</h2>
           <div class="links">
+            <div class="link">
+              <a href="https://www.linkedin.com/in/lachlan-mitchell-24993225a/"><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" target="_blank" alt="linkedin"></a>
+            </div>
             <div class="link">
               <a href="https://github.com/Lachlan-Mitchell" target="_blank"><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
             </div>
@@ -233,21 +271,21 @@
             </div>
           </div>
         </div>
-        <div class="contact-form-wrapper">
+        <div class="contact__form--wrapper">
           <form>
-            <div class="form-item">
+            <div class="form__item">
               <input type="text" name="sender" required>
               <label>Name:</label>
             </div>
-            <div class="form-item">
+            <div class="form__item">
               <input type="text" name="email" required>
               <label>Email:</label>
             </div>
-            <div class="form-item">
+            <div class="form__item">
               <textarea class="" name="message" required></textarea>
               <label>Message:</label>
             </div>
-            <button class="submit-btn">Send</button>  
+            <button class="submit__btn">Send</button>  
           </form>
         </div>
       </div>
